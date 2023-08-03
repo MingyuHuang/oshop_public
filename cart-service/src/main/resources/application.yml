@@ -1,0 +1,41 @@
+server:
+  port: 8083
+
+spring:
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQL95Dialect
+      format_sql: true
+
+  datasource:
+    url: jdbc:postgresql://localhost/db_oshop
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+
+alipay:
+  app-id: your-app-id
+  seller-id: your-seller-id
+  gateway-url: https://openapi-sandbox.dl.alipaydev.com/gateway.do
+  merchant-private-key: your-merchant-key
+  alipay-public-key: your-public-key
+  content-key: your-content-key
+  return-url: http://localhost:4200/order-success
+  notify-url: your-notify-url
+

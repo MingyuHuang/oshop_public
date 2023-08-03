@@ -1,0 +1,49 @@
+# [ java compiled files ]
+*.class
+
+# [ logs ]
+*.log
+
+# [ compressed files ]
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.rar
+
+# [ jvm error logs see http://www.java.com/en/download/help/error_hotspot.xml ]
+hs_err_pid*
+
+# [ os and cache ]
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+
+# [ eclipse ]
+.metadata
+bin/
+.settings
+.classpath
+.project
+
+# [ IDEA ]
+.idea/
+*.iml
+
+# [ MAVEN ]
+target/
+
+# [Jrebel]
+rebel.xml
+
+# ################################################  front end  ###################
+# [npm packages dependency]
+node_modules/
+
+# [dist directory]
+dist/
+
+# [vscode IDE]
+.vscode/

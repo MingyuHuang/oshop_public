@@ -1,0 +1,54 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: user-service
+  cloud:
+    nacos:
+      server-addr: 127.0.0.1:8847
+      discovery:
+        username: nacos
+        password: nacos
+        namespace: public
+
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            clientId: yourid
+            clientSecret: yoursecret
+            redirectUri: http://localhost:4200/callback
+          github:
+            clientId: yourid
+            clientSecret: yourid
+            redirectUri: http://localhost:4200/callback
+  datasource:
+    url: jdbc:postgresql://localhost/db_oshop
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      dialect: org.hibernate.dialect.PostgreSQL95Dialect
+      format_sql: true
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+  redis:
+    host: localhost
+    port: 6379
+    database: 1
+
+app:
+  auth:
+    secret: yoursecret
+    tokenExpirationMsec: 864000000
