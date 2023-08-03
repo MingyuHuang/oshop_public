@@ -77,7 +77,7 @@ OShop project leverages `Spring Boot` as back-end and `Angular` framework as fro
 ## Front-end
 > Repository
 
-Please check <a href="https://github.com/MingyuHuang/oshop_ui_public">https://github.com/MingyuHuang/oshop_ui_public</a>
+Please check <a href="https://github.com/MingyuHuang/oshop_ui_public"> https://github.com/MingyuHuang/oshop_ui_public </a>
 
 
 > Home Page
