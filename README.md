@@ -22,7 +22,7 @@
 - [Introduction](#introduction)
 - [Features](#features)
 - [System Architecture](#system-architecture)
-- [OShop Snapshot](#oshop-snapshot)
+- [Front-end](#front-end)
 
 ## Introduction
 OShop is an online shopping website which covers full business processes of online sales, it provides a user-friendly portal for customers to explore products, add desired products to shopping cart, and place orders. What's more, it also acts as a management system for merchants to publish products, handle customers' orders as well as manage permission.
@@ -64,6 +64,7 @@ OShop project leverages `Spring Boot` as back-end and `Angular` framework as fro
 |SpringBoot|Backend framework|2.3.11.RELEASE
 |SpringCloud Alibaba|Microservice development framework|2.2.6.RELEASE
 |Spring Data|JPA framework|2.3.9.RELEASE
+|Swagger|API Documentation|2.7.0
 |Redis|NoSQL DB for cache|7.0.11
 |PostgreSQL|Database| 12.15
 |RabbitMQ|Message Queue middleware|3.11
@@ -72,7 +73,13 @@ OShop project leverages `Spring Boot` as back-end and `Angular` framework as fro
 |Nacos|Service discovery|1.4.2
 |OpenFeign|Declarative REST client|2.2.5.RELEASE
 |Druid|DB connection pool| 1.2.15
-## OShop Snapshot
+
+## Front-end
+> Repository
+
+Please check <a href="https://github.com/MingyuHuang/oshop_ui_public">https://github.com/MingyuHuang/oshop_ui_public</a>
+
+
 > Home Page
 
 ![homepage](static/homepage.png)
